@@ -12,7 +12,7 @@
         <!-- Навигация по сайту -->
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="index.html">
               <img src="" alt="Логотип магазина &#34;Глейси&#34;">
             </a>
           </li>
@@ -345,10 +345,51 @@
       <section class="development">
         <h2 class="visually-hidden">О разработчике</h2>
         <a class="development-logo-link" href="https://htmlacademy.ru/">
-          <img class="logo-htmlacademy" src="" alt="">
+          <img class="logo-htmlacademy" src="" alt="Логотип HTML Academy">
         </a>
         <p class="development-htmlacademy">Сделано в <a class="development-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
       </section>
     </footer>
+    <!-- Форма обратной связи -->
+    <section class="feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <p class="feedback-title">Мы обязательно ответим вам!</p>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="feedback-name">Имя и Фамилия</label>
+        <input id="feedback-name" name="feedback-name" type="name" placeholder="Имя и фамилия" required>
+        <label class="visually-hidden" for="feedback-email">Email</label>
+        <input id="feedback-email" name="feedback-emai" type="email" placeholder="email@example.com" required>
+        <label for="feedback-message">В свободной форме</label>
+        <textarea id="feedback-message" name="feedback-message" cols="30" rows="10" required>В свободной форме</textarea>
+        <button class="button red-bautton">Отправить</button>
+        <button class="close-button"><span class="visually-hidden">Закрыть</span></button>
+      </form>
+    </section>
+    <!-- Попап поиска -->
+    <section class="search-popup">
+      <h2 class="visually-hidden">Строка поиска</h2>
+      <form class="search-popup-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="search-popup">Поле поиска</label>
+        <input id="feedback-search" name="feedback-search" type="text" placeholder="Поиск по сайту">
+        <button class="search-button">Поиск</button>
+      </form>
+    </section>
+    <!-- Попап входа -->
+    <section class="login-popup">
+      <h2 class="login-popup-title">Личный кабинет</h2>
+      <form class="login-popup-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="login-email">Email</label>
+        <input id="login-email" name="login-email" type="email" placeholder="email@example.com">
+        <label class="visually-hidden" for="login-password">Пароль</label>
+        <input id="login-password" name="login-password" type="password" placeholder="••••••">
+        <button class="button red-button">Войти</button>
+      </form>
+      <a class="forget-password" href="#">Забыли пароль?</a>
+      <a class="registration" href="#">Регистрация</a>
+    </section>
+    <!-- Попап корзины для главной -->
+    <section class="basket-popup">
+      <p class="basket-popup-message">Ваша корзина пока пуста</p>
+    </section>
   </body>
 </html>
