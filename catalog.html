@@ -13,7 +13,7 @@
         <ul class="nav-list">
           <li class="nav-item">
             <a class="nav-link" href="index.html">
-              <img src="" alt="Логотип магазина "Глейси">
+              <img src="" alt="Логотип магазина &#34;Глейси&#34;">
             </a>
           </li>
           <li class="nav-item">
@@ -28,7 +28,9 @@
         </ul>
         <!-- Навигация пользователя -->
         <ul class="nav-user">
-          <a class="nav-link nav-phone" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
+          <li>
+            <a class="nav-link nav-phone" href="tel:+7800555-86-28">+7 800 555-86-28</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -38,7 +40,7 @@
             <a class="nav-link" href="#">Вход</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="basket.html">
               <span class="visually-hidden">Корзина</span>
             </a>
           </li>
@@ -63,7 +65,7 @@
         <h1 class="inner-header-title">Сливочное мороженное</h1>
       </header>
       <!-- Фильтр -->
-      <section class="filter">
+      <div class="filter">
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <!-- Сортировка -->
           <fieldset class="filter-sorting">
@@ -77,10 +79,10 @@
           <!-- Цена -->
           <fieldset class="filter-price">
             <legend class="filter-titles">Цена:</legend>
-            <button class="range-toggle price-min" type="toggle-button">
+            <button class="range-toggle price-min" type="button">
               <span class="visually-hidden">Изменить минимальную цену</span>
             </button>
-            <button class="range-toggle price-max" type="toggle-button">
+            <button class="range-toggle price-max" type="button">
               <span class="visually-hidden">Изменить максимальную цену</span>
             </button>
             <label class="filter-price-label">
@@ -149,7 +151,7 @@
           </fieldset>
           <button class="button transparent-button">Применить</button>
         </form>
-      </section>
+      </div>
       <section class="production-section">
         <h2 class="visually-hidden">Перечень продуктов</h2>
         <ul>
@@ -269,17 +271,6 @@
           <li class="production">
             <a class="product" href="basket.html">
               <img src="" alt="">
-              <h3 class="product-title"></h3>
-              <p class="product-description"></p>
-            </a>
-            <b class="product-price"> ₽/кг</b>
-            <a class="product-basket-button" href="basket.html">
-              <span class="visually-hidden">В корзину</span>
-            </a>
-          </li>
-          <li class="production">
-            <a class="product" href="basket.html">
-              <img src="" alt="">
               <h3 class="product-title">Орешек</h3>
               <p class="product-description">Фисташковый пломбир с шоколадным сиропом</p>
             </a>
@@ -389,7 +380,7 @@
       <h2 class="visually-hidden">Строка поиска</h2>
       <form class="search-popup-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="search-popup">Поле поиска</label>
-        <input id="feedback-search" name="feedback-search" type="text" placeholder="Поиск по сайту">
+        <input id="search-popup" name="search-popup" type="text" placeholder="Поиск по сайту">
         <button class="search-button">Поиск</button>
       </form>
     </section>
@@ -413,13 +404,13 @@
         <li class="basket-popup-item">
           <h3 class="basket-product-title">Малинка</h3>
           <p class="basket-product-vakue">1 кг х 310 ₽</p>
-          <b claas="basket-product-cost">310 ₽</b>
+          <b class="basket-product-cost">310 ₽</b>
           <button type="button"><span class="visually-hidden">Убрать из корзины</span></button>
         </li>
         <li class="basket-popup-item">
           <h3 class="basket-product-title">Бабл-гам</h3>
           <p class="basket-product-vakue">1,5 кг х 320 ₽</p>
-          <b claas="basket-product-cost">480 ₽</b>
+          <b class="basket-product-cost">480 ₽</b>
           <button type="button"><span class="visually-hidden">Убрать из корзины</span></button>
         </li>
       </ul>

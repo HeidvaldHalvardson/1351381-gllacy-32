@@ -93,6 +93,7 @@
           </button>
           <button class="next-slider">
             <span class="visually-hidden">Следующее предложение</span>
+          </button>
         </div>
         <!-- Точки переключения слайдов -->
         <div class="slider-dots">
@@ -333,7 +334,7 @@
       <p class="feedback-title">Мы обязательно ответим вам!</p>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="feedback-name">Имя и Фамилия</label>
-        <input id="feedback-name" name="feedback-name" type="name" placeholder="Имя и фамилия" required>
+        <input id="feedback-name" name="feedback-name" type="text" placeholder="Имя и фамилия" required>
         <label class="visually-hidden" for="feedback-email">Email</label>
         <input id="feedback-email" name="feedback-emai" type="email" placeholder="email@example.com" required>
         <label for="feedback-message">В свободной форме</label>
@@ -347,7 +348,7 @@
       <h2 class="visually-hidden">Строка поиска</h2>
       <form class="search-popup-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="search-popup">Поле поиска</label>
-        <input id="feedback-search" name="feedback-search" type="text" placeholder="Поиск по сайту">
+        <input id="search-popup" name="search-popup" type="text" placeholder="Поиск по сайту">
         <button class="search-button">Поиск</button>
       </form>
     </section>
@@ -366,6 +367,7 @@
     </section>
     <!-- Попап корзины для главной -->
     <section class="basket-popup">
+      <h2 class="visually-hidden basket-popup-title">Корзина</h2>
       <p class="basket-popup-message">Ваша корзина пока пуста</p>
     </section>
   </body>
