@@ -51,86 +51,63 @@
     <main>
       <h1 class="visually-hidden">Главная магазина &#34;Глейси&#x22;</h1>
       <!-- Слайдер Лучшее предложение -->
-      <div class="slider">
+      <section class="slider">
         <h2 class="visually-hidden">Лучшее предложение</h2>
-        <div class="slider-1">
-          <section class="best-offer">
+        <div class="slider-1" id="slide1">
+          <div class="best-offer">
             <h3 class="best-offer-title">Нежный пломбир с клубничным джемом</h3>
             <p class="best-offer-description">Натуральное мороженое из свежих сливок
               и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
             <a class="button white-button" href="#">Заказать</a>
-            <!-- Управление слайдами на слайде -->
-            <div class="ice-cream sliders-control">
-              <button class="pre-slider">
-                <span class="visually-hidden">Предыдущее предложение</span>
-              </button>
-              <img src="" alt=""> 
-              <button class="next-slider">
-                <span class="visually-hidden">Следующее предложение</span>
-              </button>
-              <button class="swicth-slider">
-                <span class="visually-hidden">Другое предложение</span>
-              </button>
-              <button class="swicth-slider">
-                <span class="visually-hidden">Другое предложение</span>
-              </button>
-            </div>
-          </section>
-        </div>  
-        <div class="slider-2 visually-hidden">
-          <section class="best-offer">
+          </div>
+          <figure class="best-offer-img">
+            <img src="" alt=""> 
+          </figure>
+         </div>  
+        <div class="slider-2  visually-hidden" id="slide2">
+          <div class="best-offer">
             <h3 class="best-offer-title">Сливочное мороженое со вкусом банана</h3>
             <p class="best-offer-description">Сливочное мороженое с ярким банановым вкусом подарит 
               вам свежесть и наслаждение даже в самый жаркий летний день. </p>
             <a class="button white-button" href="#">Заказать</a>
-            <!-- Управление слайдами на слайде -->
-            <div class="ice-cream sliders-control">
-              <button class="pre-slider">
-                <span class="visually-hidden">Предыдущее предложение</span>
-              </button>
-              <img src="" alt=""> 
-              <button class="next-slider">
-                <span class="visually-hidden">Следующее предложение</span>
-              </button>
-              <button class="swicth-slider">
-                <span class="visually-hidden">Другое предложение</span>
-              </button>
-              <button class="swicth-slider">
-                <span class="visually-hidden">Другое предложение</span>
-              </button>
-            </div>
-          </section>
-        </div>  
-        <div class="slider-3 visually-hidden">
-          <section class="best-offer">
+          </div>
+          <figure class="best-offer-img">
+            <img src="" alt=""> 
+          </figure>
+        </div>         
+        <div class="slider-3 visually-hidden" id="slide3">
+          <div class="best-offer">
             <h3 class="best-offer-title">Карамельный пломбир с маршмеллоу</h3>
             <p class="best-offer-description">Необычный сладкий дессерт с карамельный топпингом 
               и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
             <a class="button white-button" href="#">Заказать</a>
-            <!-- Управление слайдами на слайде -->
-            <div class="ice-cream sliders-control">
-              <button class="pre-slider">
-                <span class="visually-hidden">Предыдущее предложение</span>
-              </button>
-              <img src="" alt=""> 
-              <button class="next-slider">
-                <span class="visually-hidden">Следующее предложение</span>
-              </button>
-              <button class="swicth-slider">
-                <span class="visually-hidden">Другое предложение</span>
-              </button>
-              <button class="swicth-slider">
-                <span class="visually-hidden">Другое предложение</span>
-              </button>
-            </div>
-          </section>
+          </div> 
+          <figure class="best-offer-img">
+            <img src="" alt=""> 
+          </figure> 
+        </div>
+        <!-- Управление слайдами на слайде -->
+        <div class="ice-cream sliders-control">
+          <button class="pre-slider">
+            <span class="visually-hidden">Предыдущее предложение</span>
+          </button>
+          <button class="next-slider">
+            <span class="visually-hidden">Следующее предложение</span>
         </div>
         <!-- Точки переключения слайдов -->
-        <div class="slider-point">
-          <input class="slider-point-radio" type="radio" name="slider-point">
-          <input class="slider-point-radio" type="radio" name="slider-point">
-          <input class="slider-point-radio" type="radio" name="slider-point">
-        </div>
+        <div class="slider-dots">
+          <ol class="slider-dots-list">
+            <li class="slider-dots-item">
+              <a class="slider-dots-link" href="#slide1"><span class="visually-hidden">Перейти на слайд 1</span></a>
+            </li>
+            <li class="slider-dots-item">
+              <a class="slider-dots-link" href="#slide2"><span class="visually-hidden">Перейти на слайд 2</span></a>
+            </li>
+            <li class="slider-dots-item">
+              <a class="slider-dots-link" href="#slide3"><span class="visually-hidden">Перейти на слайд 3</span></a>
+            </li>
+          </ol>
+        </div>        
         <!-- Ссылки на соц. сети -->
         <div class="social-slider">
           <ul class="social-slider-list">
@@ -150,8 +127,8 @@
               </a>
             </li>
           </ul>
-        </div>
-      </div>
+        </div> 
+      </section>
       <!-- Специальное предложение -->
       <section class="gifts">
         <h2>Заказывайте мороженое и получайте подарки!</h2>
