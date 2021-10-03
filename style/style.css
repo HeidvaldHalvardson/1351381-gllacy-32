@@ -1,0 +1,107 @@
+/* Подключаем шрифты */
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.raspberry {
+    background-color: #FF7799;
+    background-image: url(../img/raspberry-gift.png);
+    width: 570px;
+    height: 268px;
+    border-radius: 16px;
+}
+
+.marshmallow {
+    background-color: #FF7799;
+    background-image: url(../img/marshmallow-gift.png);
+    width: 570px;
+    height: 268px;
+    border-radius: 16px;
+}
+
+.product img {
+    border-radius: 50%;
+}
+
+.special {
+    background-image: url(../img/waffle-bg.jpg);
+    background-repeat: no-repeat;
+    width: 1122px;
+    height: 432px;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.special-inner {
+    background-color: #FCFCFC;
+    width: 1122px;
+    height: 432px; 
+    border-radius: inherit; 
+}
+
+.blog {
+    background-color: #ffffff;
+    background-image: url(../img/news-bg.jpg);
+    background-repeat: no-repeat;
+    width: 570px;
+    height: 216px;
+    border-radius: 16px;
+}
+
+.post {
+    background-image: url(../img/post-bg.jpg);
+    background-repeat: no-repeat;
+    width: 558px;
+    height: 208px;
+    padding: 6px;
+}
+
+.post-inner {
+    background-color: #FCFCFC;
+    width: 558px;
+    height: 208px;
+}
+
+.delivery {
+    background-color: #fcfcfc;
+    background-image: url(../img/delivery-bg.jpg);
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 534px;
+    border-radius: 16px;
+}
+
+.contacts {
+    background-color: #fcfcfc;
+    background-image: url(../img/form-bg.jpg);
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 492px;
+    border-radius: 16px;
+}
