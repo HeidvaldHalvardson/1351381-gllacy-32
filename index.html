@@ -37,11 +37,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Вход</a>
+            <a class="nav-link" href="#">
+              <span class="nav-button-text">Вход</span>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="basket.html">
-              <span class="visually-hidden">Корзина</span>
+              <span class="nav-button-text">Пусто</span>
             </a>
           </li>
         </ul>
@@ -49,7 +51,7 @@
     </header>
     <!-- Основной раздел главной страницы -->
     <main>
-      <h1 class="visually-hidden">Главная магазина &#34;Глейси&#x22;</h1>
+      <h1 class="visually-hidden">Главная страница магазина &#34;Глейси&#x22;</h1>
       <!-- Слайдер Лучшее предложение -->
       <section class="slider">
         <h2 class="visually-hidden">Лучшее предложение</h2>
@@ -132,7 +134,8 @@
       </section>
       <!-- Специальное предложение -->
       <section class="gifts">
-        <h2>Заказывайте мороженое и получайте подарки!</h2>
+        <h2 class="gifts-title">Заказывайте мороженое<br>
+                                и получайте подарки!</h2>
         <ul>
           <li class="gifts-item raspberry">
             <h3 class="gifts-item-title">Малинка даром!</h3>
@@ -150,11 +153,12 @@
       </section>
       <!-- Популярные товары -->
       <section class="popular">
-        <h2 class="popular-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
-        <ul class="popular-list">
+        <h2 class="popular-title">Попробуйте самые популярные<br>
+                                  вкусы нашего мороженого</h2>
+        <ul class="popular-list production-list">
           <li class="popular-item production">
             <a class="product" href="basket.html">
-              <img src="img/catalog/catalog-1.jpg" alt="" width="168" height="168">
+              <img class="product-img" src="img/catalog/catalog-1.jpg" alt="" width="168" height="168">
               <h3 class="product-title">Малинка</h3>
               <p class="product-description">Сливочное мороженое с малиновым джемом</p>
             </a>
@@ -165,7 +169,7 @@
           </li>
           <li class="popular-item production">
             <a class="product" href="basket.html">
-              <img src="img/catalog/catalog-2.jpg" alt="" width="168" height="168">
+              <img class="product-img" src="img/catalog/catalog-2.jpg" alt="" width="168" height="168">
               <h3 class="product-title">Фисташка</h3>
               <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
             </a>
@@ -176,7 +180,7 @@
           </li>
           <li class="popular-item production">
             <a class="product" href="basket.html">
-              <img src="img/catalog/catalog-3.jpg" alt="" width="168" height="168">
+              <img class="product-img" src="img/catalog/catalog-3.jpg" alt="" width="168" height="168">
               <h3 class="product-title">Черника</h3>
               <p class="product-description">Крем-брюле с черничным джемом</p>
             </a>
@@ -187,7 +191,7 @@
           </li>
           <li class="popular-item production">
             <a class="product" href="basket.html">
-              <img src="img/catalog/catalog-4.jpg" alt="" width="168" height="168">
+              <img class="product-img" src="img/catalog/catalog-4.jpg" alt="" width="168" height="168">
               <h3 class="product-title">Бабл-гам</h3>
               <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
             </a>
@@ -251,14 +255,14 @@
         <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="delivery-form-title">Укажите адрес и дату доставки, и мы свяжемся с вами, 
             чтобы подтвердить заказ.</p>
-          <label for="delivery-date">Дата</label>
+          <label class="delivery-label" for="delivery-date">Дата</label>
           <button class="info">
             <span class="visually-hidden">Показать дополнительную информацию</span>
           </button>
           <input id="delivery-date" name="delivery-date" type="text" placeholder="01.04.2020">
-          <label for="delivery-tel">Телефон</label>
+          <label class="delivery-label" for="delivery-tel">Телефон</label>
           <input id="delivery-tel" name="delivery-tel" type="text" placeholder="+7 800 999-00-00">
-          <label for="delivery-adress">Адрес</label>
+          <label class="delivery-label" for="delivery-adress">Адрес</label>
           <button class="info">
             <span class="visually-hidden">Показать дополнительную информацию</span>
           </button>
@@ -267,13 +271,15 @@
       </section>
       <!-- Контакты и форма обратной связи -->
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts-title">Адрес главного офиса и офлайн-магазина:</p>
-        <p class="contacts-adress">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <p class="contacts-tel-title">Для заказов по телефону:</p>
-        <a class="contacts-tel" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
-        <p class="contacts-time">(с 10 до 20 ежедневно)</p>
-        <a class="button red-button" href="#">Форма обратной связи</a>
+        <div class="contacts-inner">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts-title">Адрес главного офиса и офлайн-магазина:</p>
+          <p class="contacts-adress">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <p class="contacts-tel-title">Для заказов по телефону:</p>
+          <a class="contacts-tel" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+          <p class="contacts-time">(с 10 до 20 ежедневно)</p>
+          <a class="button red-button" href="#">Форма обратной связи</a>
+        </div>  
       </section>
     </main> 
     <!-- Footer -->
@@ -301,10 +307,10 @@
       </section>
       <!-- Информация -->
       <section class="footer-info"> 
-        <h2 class="footer-info-title">Информация</h2>
+        <h2 class="visually-hidden">Информация</h2>
         <ul class="footer-info-list">
           <li class="footer-info-item">
-            <a class="footer-info-heart footer-info-link" href="#">Для поставщиков</a>
+            <a class="footer-info-link footer-info-heart" href="#">Для поставщиков</a>
           </li>
           <li class="footer-info-item">
             <a class="footer-info-link" href="#">О производстве</a>
@@ -313,13 +319,13 @@
       </section>
       <!-- Документация  -->
       <section class="footer-doc">
-        <h2 class="footer-doc-titile">Документация</h2>
-        <ul class="footer-doc-list">
-          <li class="footer-doc-item">
-            <a class="footer-doc-link" href="#">Наши документы</a>
+        <h2 class="visually-hidden">Документация</h2>
+        <ul class="footer-info-list">
+          <li class="footer-info-item">
+            <a class="footer-info-link" href="#">Наши документы</a>
           </li>
-          <li class="footer-doc-item">
-            <a class="footer-doc-link" href="#">Экологические стандарты</a>
+          <li class="footer-info-item">
+            <a class="footer-info-link" href="#">Экологические стандарты</a>
           </li>
         </ul>
       </section>
@@ -329,7 +335,11 @@
         <a class="development-logo-link" href="https://htmlacademy.ru/">
           <img class="logo-htmlacademy" src="img/logo_htmlacademy.svg" alt="Логотип HTML Academy">
         </a>
-        <p class="development-htmlacademy">Сделано в <a class="development-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+        <address class="development-htmlacademy">
+          Сделано в 
+          <a class="development-link" href="https://htmlacademy.ru/">.html academy</a> 
+          © 2021
+        </address>
       </section>
     </footer>
     <!-- Форма обратной связи -->
@@ -341,7 +351,7 @@
         <input id="feedback-name" name="feedback-name" type="text" placeholder="Имя и фамилия" required>
         <label class="visually-hidden" for="feedback-email">Email</label>
         <input id="feedback-email" name="feedback-emai" type="email" placeholder="email@example.com" required>
-        <label for="feedback-message">В свободной форме</label>
+        <label class="visually-hidden" for="feedback-message">В свободной форме</label>
         <textarea id="feedback-message" name="feedback-message" cols="30" rows="10" required>В свободной форме</textarea>
         <button class="button red-bautton">Отправить</button>
         <button class="close-button"><span class="visually-hidden">Закрыть</span></button>
@@ -366,8 +376,8 @@
         <input id="login-password" name="login-password" type="password" placeholder="••••••">
         <button class="button red-button">Войти</button>
       </form>
-      <a class="forget-password" href="#">Забыли пароль?</a>
-      <a class="registration" href="#">Регистрация</a>
+      <a class="forget-password login-popup-link" href="#">Забыли пароль?</a>
+      <a class="registration login-popup-link" href="#">Регистрация</a>
     </section>
     <!-- Попап корзины для главной -->
     <section class="basket-popup">

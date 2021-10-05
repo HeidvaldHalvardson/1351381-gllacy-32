@@ -4,7 +4,7 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/inter-700.woff2") format("woff2");
+    src: url("../fonts/inter-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -12,7 +12,7 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/inter-400.woff2") format("woff2");
+    src: url("../fonts/inter-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -20,35 +20,163 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 900;
-    src: url("fonts/inter-900.woff2") format("woff2");
+    src: url("../fonts/inter-900.woff2") format("woff2");
     font-display: swap;
+}
+
+/* Основные свойства */
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: #FEAFC3;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #565C66;
+}
+
+.button {
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    padding: 12px 32px;
+    border-radius: 26px;
+}
+
+.white-button {
+    color: #2D3440;
+    background-color: #FCFCFC;
+}
+
+.red-button {
+    color: #FCFCFC;
+    background-color: #FF2F64;
+}
+
+.form-button {
+    color: #2D3440;
+    padding: 8px 32px;
+    background: rgba(252, 252, 252, 0.3);
+}
+
+/* Header */
+
+/* Навигация */
+
+.nav-link {
+    color: #2D3440;
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+}
+
+.nav-phone {
+    font-weight: 700;
+}
+
+.nav-button-text {
+    font-size: 14px;
+}
+
+/* Главная страница */
+
+/* Слайдер лучшее предложение */
+
+.slider{
+    color: #2D3440;
+}
+
+.best-offer-title {
+    color: #2D3440;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.best-offer-description {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Специальное предложение */
+
+.gifts {
+    color: #2D3440;
+}
+
+.gifts-item {
+    background-color: #FF7799;
+    width: 570px;
+    height: 268px;
+    border-radius: 16px;
 }
 
 .raspberry {
-    background-color: #FF7799;
-    background-image: url(../img/raspberry-gift.png);
-    width: 570px;
-    height: 268px;
-    border-radius: 16px;
+    background-image: url(../img/raspberry-gift.png); 
 }
 
 .marshmallow {
-    background-color: #FF7799;
     background-image: url(../img/marshmallow-gift.png);
-    width: 570px;
-    height: 268px;
-    border-radius: 16px;
 }
 
-.product img {
+.gifts-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.gifts-item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* Популярные товары */
+
+.popular-title {
+    color: #2D3440;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+/* Товары */
+
+.product {
+    text-decoration: none;
+}
+
+.product-title {
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.product-description {
+    color: #565C66;
+}
+
+.product-img {
     border-radius: 50%;
 }
+
+/* Преиущества магазина */
 
 .special {
     background-image: url(../img/waffle-bg.jpg);
@@ -66,6 +194,15 @@ body {
     border-radius: inherit; 
 }
 
+.special-description {
+    color: #2D3440;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+/* Новостной блог */
+
 .blog {
     background-color: #ffffff;
     background-image: url(../img/news-bg.jpg);
@@ -74,6 +211,21 @@ body {
     height: 216px;
     border-radius: 16px;
 }
+
+.blog-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.blog-article {
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* Подписка на рассылку */
 
 .post {
     background-image: url(../img/post-bg.jpg);
@@ -89,6 +241,8 @@ body {
     height: 208px;
 }
 
+/* Панель доставки */
+
 .delivery {
     background-color: #fcfcfc;
     background-image: url(../img/delivery-bg.jpg);
@@ -98,6 +252,25 @@ body {
     border-radius: 16px;
 }
 
+.delivery-title {
+    color: #2D3440;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.delivery-form {
+    background-color: #FCFCFC;
+}
+
+.delivery-label {
+    color: #2D3440;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+/* Контакты и форма обратной связи */
+
 .contacts {
     background-color: #fcfcfc;
     background-image: url(../img/form-bg.jpg);
@@ -105,4 +278,123 @@ body {
     width: 1170px;
     height: 492px;
     border-radius: 16px;
+}
+
+.contacts-inner {
+    background-color: #FCFCFC;
+}
+
+.contacts-adress,
+.contacts-tel {
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* Станица каталога */
+
+/* Хлебные крошки */
+
+.breadcrumbs-link {
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.inner-header-title {
+    color: #2D3440;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+/* Фильтр */
+
+.filter-text-style {
+    color: #2D3440;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Каталог */
+
+.catalog-pagination-link {
+    color: #2D3440;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+/* Footer */
+
+/* Информация и Документация */
+
+.footer-info-link {
+    color: #2D3440;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.footer-info-heart {
+    font-weight: 700;
+}
+
+/* Информация о разработке */
+
+.development-htmlacademy {
+    color: #2D3440;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.development-link {
+    color: inherit;
+}
+
+/* Попапы */
+
+.feedback-title,
+.login-popup-title,
+.basket-popup-message {
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.basket-popup-message {
+    text-align: center;
+}
+
+.login-popup-link {
+    color: #2D3440;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.basket-popup-title {
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.basket-popup-changed {
+    background-color: #FCFCFC;
+}
+
+.basket-product-title,
+.basket-product-cost,
+.basket-final-cost {
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.basket-product-value {
+    color: #B9B9B9;
+    font-size: 14px;
+    line-height: 20px;
 }
