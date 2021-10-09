@@ -7,7 +7,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="page-header">
+    <header class="page-header container">
       <nav class="nav">
         <!-- Навигация по сайту -->
         <ul class="nav-list">
@@ -48,7 +48,7 @@
       </nav>
     </header>
     <!-- Основная разметка страницы каталога -->
-    <main>
+    <main class="container">
       <!-- Хлебные крошки -->
       <header class="inner-header">
         <ul class="breadcrumbs">
@@ -68,7 +68,7 @@
       <div class="filter">
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <!-- Сортировка -->
-          <fieldset class="filter-sorting">
+          <fieldset class="filter-sorting filter-form-item">
             <legend class="filter-titles filter-text-style">Сортировка:</legend>
             <select class="filter-sorting-control" name="sorting">
               <option value="popular">по популярности</option>
@@ -77,7 +77,7 @@
             </select>
           </fieldset>
           <!-- Цена -->
-          <fieldset class="filter-price">
+          <fieldset class="filter-price filter-form-item">
             <legend class="filter-titles filter-text-style">Цена:</legend>
             <button class="range-toggle price-min" type="button">
               <span class="visually-hidden">Изменить минимальную цену</span>
@@ -95,7 +95,7 @@
             </label>
           </fieldset>
           <!-- Жирность -->
-          <fieldset class="filter-fat-content">
+          <fieldset class="filter-fat-content filter-form-item">
             <legend class="filter-titles text-style">Жирность:</legend>
             <ul class="fat-content-list">
               <li class="fat-control-item">
@@ -125,7 +125,7 @@
             </ul>
           </fieldset>
           <!-- Наполнители -->
-          <fieldset class="filter-fillers">
+          <fieldset class="filter-fillers filter-form-item">
             <legend class="filter-titles filter-text-style">Наполнители:</legend>
             <ul class="filter-fillers-list">
               <li class="filter-filler-item">
@@ -302,7 +302,7 @@
             </a>
           </li>
         </ul>
-        <a class="button white-button" href="#">Показать еще</a>
+        <a class="button white-button view-more" href="#">Показать еще</a>
         <ul class="catalog-pagination">
           <li class="catalog-pagination-item">
             <a class="catalog-pagination-control" href="#">
@@ -327,11 +327,11 @@
             <a class="catalog-pagination--control" href="#">
               <span class="visually-hidden">Следующая страница</span></a>
           </li>
-        </ul>
+        </ul> 
       </section>
     </main>
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <!-- Социальные сети -->
       <section class="social-footer">
         <h2 class="visually-hidden">Социальные сети</h2>
@@ -353,37 +353,44 @@
           </li>
         </ul>
       </section>
-      <!-- Информация -->
-      <section class="footer-info"> 
-        <h2 class="visually-hidden">Информация</h2>
-        <ul class="footer-info-list">
-          <li class="footer-info-item">
-            <a class="footer-info-link footer-info-heart" href="#">Для поставщиков</a>
-          </li>
-          <li class="footer-info-item">
-            <a class="footer-info-link" href="#">О производстве</a>
-          </li>
-        </ul>
-      </section>
-      <!-- Документация  -->
-      <section class="footer-doc">
-        <h2 class="visually-hidden">Документация</h2>
-        <ul class="footer-info-list">
-          <li class="footer-info-item">
-            <a class="footer-info-link" href="#">Наши документы</a>
-          </li>
-          <li class="footer-info-item">
-            <a class="footer-info-link" href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-      </section>
+      <!-- Информация и Документация -->
+      <div class="footer-info-doc">
+        <!-- Информация -->
+        <section class="footer-info"> 
+          <h2 class="visually-hidden">Информация</h2>
+          <ul class="footer-info-list">
+            <li class="footer-info-item">
+              <a class="footer-info-link footer-info-heart" href="#">Для поставщиков</a>
+            </li>
+            <li class="footer-info-item">
+              <a class="footer-info-link" href="#">О производстве</a>
+            </li>
+          </ul>
+        </section>
+        <!-- Документация  -->
+        <section class="footer-doc">
+          <h2 class="visually-hidden">Документация</h2>
+          <ul class="footer-info-list">
+            <li class="footer-info-item">
+              <a class="footer-info-link" href="#">Наши документы</a>
+            </li>
+            <li class="footer-info-item">
+              <a class="footer-info-link" href="#">Экологические стандарты</a>
+            </li>
+          </ul>
+        </section>
+      </div>  
       <!-- Информация о разработке -->
       <section class="development">
         <h2 class="visually-hidden">О разработчике</h2>
         <a class="development-logo-link" href="https://htmlacademy.ru/">
           <img class="logo-htmlacademy" src="img/logo_htmlacademy.svg" alt="Логотип HTML Academy">
         </a>
-        <p class="development-htmlacademy">Сделано в <a class="development-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+        <address class="development-htmlacademy">
+          Сделано в 
+          <a class="development-link" href="https://htmlacademy.ru/">.html academy</a> 
+          © 2021
+        </address>
       </section>
     </footer>
     <!-- Попап поиска -->

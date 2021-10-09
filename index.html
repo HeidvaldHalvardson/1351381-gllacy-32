@@ -8,7 +8,7 @@
   <body>
     <!-- Header -->
     <header class="page-header">
-      <nav class="nav">
+      <nav class="nav container">
         <!-- Навигация по сайту -->
         <ul class="nav-list">
           <li class="nav-item">
@@ -50,12 +50,12 @@
       </nav>
     </header>
     <!-- Основной раздел главной страницы -->
-    <main>
+    <main class="main-container container">
       <h1 class="visually-hidden">Главная страница магазина &#34;Глейси&#x22;</h1>
       <!-- Слайдер Лучшее предложение -->
       <section class="slider">
         <h2 class="visually-hidden">Лучшее предложение</h2>
-        <div class="slider-1" id="slide1">
+        <div class="slider-1 slide" id="slide-1">
           <div class="best-offer">
             <h3 class="best-offer-title">Нежный пломбир с клубничным джемом</h3>
             <p class="best-offer-description">Натуральное мороженое из свежих сливок
@@ -66,7 +66,7 @@
             <img src="img/ice-cream-slide-1.png" alt="" width="306" height="507"> 
           </figure>
          </div>  
-        <div class="slider-2  visually-hidden" id="slide2">
+        <div class="slider-2 slide visually-hidden" id="slide-2">
           <div class="best-offer">
             <h3 class="best-offer-title">Сливочное мороженое со вкусом банана</h3>
             <p class="best-offer-description">Сливочное мороженое с ярким банановым вкусом подарит 
@@ -77,7 +77,7 @@
             <img src="img/ice-cream-slide-2.png" alt="" width="306" height="507">
           </figure>
         </div>         
-        <div class="slider-3 visually-hidden" id="slide3">
+        <div class="slider-3 slide visually-hidden" id="slide-3">
           <div class="best-offer">
             <h3 class="best-offer-title">Карамельный пломбир с маршмеллоу</h3>
             <p class="best-offer-description">Необычный сладкий дессерт с карамельный топпингом 
@@ -134,9 +134,8 @@
       </section>
       <!-- Специальное предложение -->
       <section class="gifts">
-        <h2 class="gifts-title">Заказывайте мороженое<br>
-                                и получайте подарки!</h2>
-        <ul>
+        <h2 class="gifts-title">Заказывайте мороженое и получайте подарки!</h2>
+        <ul class="gifts-list">
           <li class="gifts-item raspberry">
             <h3 class="gifts-item-title">Малинка даром!</h3>
             <p class="gifts-item-description">При покупке 2 кг любого фруктового мороженого, добавим
@@ -222,28 +221,30 @@
           </ul>
          </div> 
       </section>
-      <!-- Новостной блог -->
-      <article class="blog"> 
-        <h2 class="blog-title">Новое в нашем блоге</h2>
-        <p class="blog-article">10 способов сервировки фруктовых щербетов
-          к столу</p>
-      </article>
-      <!-- Подписка на рассылку -->
-      <article class="post">
-        <div class="post-inner">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p class="post-description">Подпишитесь на нашу сладкую рассылку и будьте всегда
-            в курсе всего самого вкусного, что у нас происходит. 
-            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>	
-          <form class="post-form" action="https://echo.htmlacademy.ru" method="post">
-            <label>
-              <input class="form-input" type="email" name="email" placeholder="email@example.com">
-              <span class="visually-hidden">Введите email</span>
-            </label>
-            <button class="button red-button" type="submit">Отправить</button>
-          </form>	
-        </div> 
-      </article>
+      <div class="wrapper-blog-post">
+        <!-- Новостной блог -->
+        <article class="blog"> 
+          <h2 class="blog-title">Новое в нашем блоге</h2>
+          <p class="blog-article">10 способов сервировки фруктовых щербетов
+            к столу</p>
+        </article>
+        <!-- Подписка на рассылку -->
+        <article class="post">
+          <div class="post-inner">
+            <h2 class="visually-hidden">Подписка на рассылку</h2>
+            <p class="post-description">Подпишитесь на нашу сладкую рассылку и будьте всегда
+              в курсе всего самого вкусного, что у нас происходит. 
+              Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>	
+            <form class="post-form" action="https://echo.htmlacademy.ru" method="post">
+              <label>
+                <input class="form-input" type="email" name="email" placeholder="email@example.com">
+                <span class="visually-hidden">Введите email</span>
+              </label>
+              <button class="button red-button" type="submit">Отправить</button>
+            </form>	
+          </div> 
+        </article>
+      </div>
       <!-- Панель доставки -->
       <section class="delivery">
         <div class="delivery-bar">
@@ -283,7 +284,7 @@
       </section>
     </main> 
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <!-- Социальные сети -->
       <section class="social-footer">
         <h2 class="visually-hidden">Социальные сети</h2>
@@ -305,30 +306,33 @@
           </li>
         </ul>
       </section>
-      <!-- Информация -->
-      <section class="footer-info"> 
-        <h2 class="visually-hidden">Информация</h2>
-        <ul class="footer-info-list">
-          <li class="footer-info-item">
-            <a class="footer-info-link footer-info-heart" href="#">Для поставщиков</a>
-          </li>
-          <li class="footer-info-item">
-            <a class="footer-info-link" href="#">О производстве</a>
-          </li>
-        </ul>
-      </section>
-      <!-- Документация  -->
-      <section class="footer-doc">
-        <h2 class="visually-hidden">Документация</h2>
-        <ul class="footer-info-list">
-          <li class="footer-info-item">
-            <a class="footer-info-link" href="#">Наши документы</a>
-          </li>
-          <li class="footer-info-item">
-            <a class="footer-info-link" href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-      </section>
+      <!-- Информация и Документация -->
+      <div class="footer-info-doc">
+        <!-- Информация -->
+        <section class="footer-info"> 
+          <h2 class="visually-hidden">Информация</h2>
+          <ul class="footer-info-list">
+            <li class="footer-info-item">
+              <a class="footer-info-link footer-info-heart" href="#">Для поставщиков</a>
+            </li>
+            <li class="footer-info-item">
+              <a class="footer-info-link" href="#">О производстве</a>
+            </li>
+          </ul>
+        </section>
+        <!-- Документация  -->
+        <section class="footer-doc">
+          <h2 class="visually-hidden">Документация</h2>
+          <ul class="footer-info-list">
+            <li class="footer-info-item">
+              <a class="footer-info-link" href="#">Наши документы</a>
+            </li>
+            <li class="footer-info-item">
+              <a class="footer-info-link" href="#">Экологические стандарты</a>
+            </li>
+          </ul>
+        </section>
+      </div>  
       <!-- Информация о разработке -->
       <section class="development">
         <h2 class="visually-hidden">О разработчике</h2>
