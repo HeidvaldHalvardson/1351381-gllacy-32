@@ -7,15 +7,15 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="page-header container">
-      <nav class="nav">
+    <header class="page-header">
+      <nav class="nav container">
         <!-- Навигация по сайту -->
+        <div class="logo-header">
+          <a class="logo-link" href="index.html">
+            <img src="img/logo.svg" alt="Логотип магазина &#34;Глейси&#34;" width="137" height="56">
+          </a>
+        </div>
         <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              <img src="img/logo.svg" alt="Логотип магазина &#34;Глейси&#34;" width="137" height="56">
-            </a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="catalog.html">Каталог</a>
           </li>
@@ -37,11 +37,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Вход</a>
+            <a class="nav-link" href="#">
+              <span class="nav-button-text">Вход</span>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="basket.html">
-              <span class="visually-hidden">Корзина</span>
+              <span class="nav-button-text">Пусто</span>
             </a>
           </li>
         </ul>
@@ -163,9 +165,10 @@
           <button class="button form-button">Применить</button>
         </form>
       </div>
+      <!-- Продукты -->
       <section class="production-section">
         <h2 class="visually-hidden">Перечень продуктов</h2>
-        <ul class="production-list">
+        <ul class="production-list production-list-catalog">
           <li class="production">
             <a class="product" href="basket.html">
               <img class="product-img" src="img/catalog/catalog-1.jpg" alt="" width="168" height="168">
@@ -302,32 +305,35 @@
             </a>
           </li>
         </ul>
-        <a class="button white-button view-more" href="#">Показать еще</a>
-        <ul class="catalog-pagination">
-          <li class="catalog-pagination-item">
-            <a class="catalog-pagination-control" href="#">
-              <span class="visually-hidden">Предыдушая страница</span></a>
-          </li>
-          <li class="catalog-pagination-item">
-            <a class="catalog-pagination-link" href="#">1</a>
-          </li>
-          <li class="catalog-pagination-item">
-            <a class="catalog-pagination-link" href="#">2</a>
-          </li>
-          <li class="catalog-pagination-item">
-            <a class="catalog-pagination-link" href="#">3</a>
-          </li>
-          <li class="catalog-pagination-item">
-            <a class="catalog-pagination-link" href="#">4</a>
-          </li>
-          <li class="catalog-pagination-item">
-            <a class="catalog-pagination-link" href="#">5</a>
-          </li>
-          <li class="catalog-pagination-item">
-            <a class="catalog-pagination--control" href="#">
-              <span class="visually-hidden">Следующая страница</span></a>
-          </li>
-        </ul> 
+        <!-- Пагинация каталога -->
+        <div class="wrapper-pagination">
+          <a class="button white-button view-more" href="#">Показать еще</a>
+          <ul class="catalog-pagination">
+            <li class="catalog-pagination-item">
+              <a class="catalog-pagination-link left-pagination-control" href="#">
+                <span class="visually-hidden">Предыдушая страница</span></a>
+            </li>
+            <li class="catalog-pagination-item">
+              <a class="catalog-pagination-link current-pagination" href="#">1</a>
+            </li>
+            <li class="catalog-pagination-item">
+              <a class="catalog-pagination-link" href="#">2</a>
+            </li>
+            <li class="catalog-pagination-item">
+              <a class="catalog-pagination-link" href="#">3</a>
+            </li>
+            <li class="catalog-pagination-item">
+              <a class="catalog-pagination-link" href="#">4</a>
+            </li>
+            <li class="catalog-pagination-item">
+              <a class="catalog-pagination-link" href="#">5</a>
+            </li>
+            <li class="catalog-pagination-item">
+              <a class="catalog-pagination-link right-pagination-control" href="#">
+                <span class="visually-hidden">Следующая страница</span></a>
+            </li>
+          </ul> 
+        </div>  
       </section>
     </main>
     <!-- Footer -->

@@ -10,12 +10,12 @@
     <header class="page-header">
       <nav class="nav container">
         <!-- Навигация по сайту -->
+        <div class="logo-header">
+          <a class="logo-link" href="index.html">
+            <img class="logo-image" src="img/logo.svg" alt="Логотип магазина &#34;Глейси&#34;" width="137" height="56">
+          </a>
+        </div>
         <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              <img src="img/logo.svg" alt="Логотип магазина &#34;Глейси&#34;" width="137" height="56">
-            </a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="catalog.html">Каталог</a>
           </li>
@@ -29,20 +29,20 @@
         <!-- Навигация пользователя -->
         <ul class="nav-user">
           <li>
-            <a class="nav-link nav-phone" href="tel:+7800555-86-28">+7 800 555-86-28</a>
+            <a class="nav-user-link nav-phone" href="tel:+7800555-86-28">+7 800 555-86-28</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-user-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-user-link" href="#">
               <span class="nav-button-text">Вход</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="basket.html">
+            <a class="nav-user-link" href="basket.html">
               <span class="nav-button-text">Пусто</span>
             </a>
           </li>
@@ -57,15 +57,20 @@
         <h2 class="visually-hidden">Лучшее предложение</h2>
         <div class="slider-1 slide" id="slide-1">
           <div class="best-offer">
-            <h3 class="best-offer-title">Нежный пломбир с клубничным джемом</h3>
-            <p class="best-offer-description">Натуральное мороженое из свежих сливок
-              и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+            <h3 class="best-offer-title">Нежный пломбир<br>
+              с клубничным джемом</h3>
+            <p class="best-offer-description">Натуральное мороженое из свежих сливок<br>
+              и молока с вкуснейшим клубничным джемом<br>
+              – это идеальный десерт для всей семьи.</p>
             <a class="button white-button" href="#">Заказать</a>
           </div>
-          <figure class="best-offer-img">
-            <img src="img/ice-cream-slide-1.png" alt="" width="306" height="507"> 
-          </figure>
-         </div>  
+          <div class="ice-cream-wrapper">
+            <div class="circle"></div>
+            <figure class="best-offer-img">
+              <img src="img/ice-cream-slide-1.png" alt="" width="306" height="507"> 
+            </figure>
+          </div>  
+        </div>
         <div class="slider-2 slide visually-hidden" id="slide-2">
           <div class="best-offer">
             <h3 class="best-offer-title">Сливочное мороженое со вкусом банана</h3>
@@ -73,9 +78,12 @@
               вам свежесть и наслаждение даже в самый жаркий летний день. </p>
             <a class="button white-button" href="#">Заказать</a>
           </div>
-          <figure class="best-offer-img">
-            <img src="img/ice-cream-slide-2.png" alt="" width="306" height="507">
-          </figure>
+          <div class="ice-cream-wrapper">
+            <div class="circle"></div>
+            <figure class="best-offer-img">
+              <img src="img/ice-cream-slide-2.png" alt="" width="306" height="507">
+            </figure>
+          </div>
         </div>         
         <div class="slider-3 slide visually-hidden" id="slide-3">
           <div class="best-offer">
@@ -83,10 +91,13 @@
             <p class="best-offer-description">Необычный сладкий дессерт с карамельный топпингом 
               и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
             <a class="button white-button" href="#">Заказать</a>
-          </div> 
-          <figure class="best-offer-img">
-            <img src="img/ice-cream-slide-3.png" alt="" width="306" height="507">
-          </figure> 
+          </div>
+          <div class="ice-cream-wrapper">
+            <div class="circle"></div> 
+            <figure class="best-offer-img">
+              <img src="img/ice-cream-slide-3.png" alt="" width="306" height="507">
+            </figure> 
+          </div>
         </div>
         <!-- Управление слайдами на слайде -->
         <div class="ice-cream sliders-control">
@@ -97,40 +108,42 @@
             <span class="visually-hidden">Следующее предложение</span>
           </button>
         </div>
-        <!-- Точки переключения слайдов -->
-        <div class="slider-dots">
-          <ol class="slider-dots-list">
-            <li class="slider-dots-item">
-              <a class="slider-dots-link" href="#slide1"><span class="visually-hidden">Перейти на слайд 1</span></a>
-            </li>
-            <li class="slider-dots-item">
-              <a class="slider-dots-link" href="#slide2"><span class="visually-hidden">Перейти на слайд 2</span></a>
-            </li>
-            <li class="slider-dots-item">
-              <a class="slider-dots-link" href="#slide3"><span class="visually-hidden">Перейти на слайд 3</span></a>
-            </li>
-          </ol>
-        </div>        
-        <!-- Ссылки на соц. сети -->
-        <div class="social-slider">
-          <ul class="social-slider-list">
-            <li class="social-slider-item social vk">
-              <a class="social-slider-link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">В контакте</span>
-              </a>
-            </li>
-            <li class="social-slider-item social fb">
-              <a class="social-slider-link" href="https://www.instagram.com/htmlacademy/">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li class="social-slider-item social instagram">
-              <a class="social-slider-link" href="https://www.instagram.com/htmlacademy/">
-                <span class="visually-hidden">Инстаграмм</span>
-              </a>
-            </li>
-          </ul>
-        </div> 
+        <div class="social-dots-wrapper">
+          <!-- Точки переключения слайдов -->
+          <div class="slider-dots">
+            <ol class="slider-dots-list">
+              <li class="slider-dots-item">
+                <a class="slider-dots-link" href="#slide1"><span class="visually-hidden">Перейти на слайд 1</span></a>
+              </li>
+              <li class="slider-dots-item">
+                <a class="slider-dots-link" href="#slide2"><span class="visually-hidden">Перейти на слайд 2</span></a>
+              </li>
+              <li class="slider-dots-item">
+                <a class="slider-dots-link" href="#slide3"><span class="visually-hidden">Перейти на слайд 3</span></a>
+              </li>
+            </ol>
+          </div>        
+          <!-- Ссылки на соц. сети -->
+          <div class="social-slider">
+            <ul class="social-slider-list">
+              <li class="social-slider-item social vk">
+                <a class="social-slider-link" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">В контакте</span>
+                </a>
+              </li>
+              <li class="social-slider-item social fb">
+                <a class="social-slider-link" href="https://www.instagram.com/htmlacademy/">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+              <li class="social-slider-item social instagram">
+                <a class="social-slider-link" href="https://www.instagram.com/htmlacademy/">
+                  <span class="visually-hidden">Инстаграмм</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>   
       </section>
       <!-- Специальное предложение -->
       <section class="gifts">
@@ -145,7 +158,8 @@
           <li class="gifts-item marshmallow">
             <h3 class="gifts-item-title">Маршмеллоу даром!</h3>
             <p class="gifts-item-description">При покупке 2 кг пломбира, добавим
-              в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+              в&nbsp;ваш заказ упаковку нежных<br>
+              зефирок совершенно бесплатно.</p>
             <a class="button white-button" href="catalog.html">Хочу подарок</a>
           </li>
         </ul>  
@@ -211,10 +225,10 @@
             <li class="special-item">Все наше мороженое изгатавливается на собственном производстве, 
               с использованием современного оборудования и проверенных временем технологий.</li>
             <li class="special-item">Закупка ингредиентов производится только
-              у проверенных фермерских хозяйств, с которыми
-              нас связывает долговременное сотрудничество.</li>
-            <li class="special-item">Для приготовления мороженого используются сливки и молоко высочайшего качества. 
-              Все ингредиенты
+              у&nbsp;проверенных фермерских хозяйств, с которыми
+              нас&nbsp;связывает долговременное сотрудничество.</li>
+            <li class="special-item">Для приготовления мороженого используются сливки<br>
+              и молоко высочайшего качества. Все ингредиенты<br>
               и добавки произведены из натурального сырья.</li>
             <li class="special-item">Доставка нашего мороженого осуществляется в специальном термопаке, 
               который не дает мороженому растаять и позволяет сохранить превосходный вкус.</li>
@@ -225,7 +239,8 @@
         <!-- Новостной блог -->
         <article class="blog"> 
           <h2 class="blog-title">Новое в нашем блоге</h2>
-          <p class="blog-article">10 способов сервировки фруктовых щербетов
+          <p class="blog-article">10 способов сервировки<br>
+            фруктовых щербетов<br>
             к столу</p>
         </article>
         <!-- Подписка на рассылку -->
@@ -312,7 +327,7 @@
         <section class="footer-info"> 
           <h2 class="visually-hidden">Информация</h2>
           <ul class="footer-info-list">
-            <li class="footer-info-item">
+            <li class="footer-info-item up-item">
               <a class="footer-info-link footer-info-heart" href="#">Для поставщиков</a>
             </li>
             <li class="footer-info-item">
@@ -324,7 +339,7 @@
         <section class="footer-doc">
           <h2 class="visually-hidden">Документация</h2>
           <ul class="footer-info-list">
-            <li class="footer-info-item">
+            <li class="footer-info-item up-item">
               <a class="footer-info-link" href="#">Наши документы</a>
             </li>
             <li class="footer-info-item">
