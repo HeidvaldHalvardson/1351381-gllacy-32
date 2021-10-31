@@ -179,6 +179,24 @@ body {
     background: #E7E7E7;
 }
 
+.social {
+    display: block;
+    fill: #FCFCFC;
+    border: 2px solid rgba(252, 252, 252, 0.2);
+    border-radius: 50%;
+    line-height: 0;
+}
+
+.social:hover {
+    fill: #2D3440;
+}
+
+.social:focus-within {
+    fill: #2D3440;
+    border: 2px solid #2D3440;
+    outline: none;
+}
+
 /* Header */
 
 /* Навигация */
@@ -202,7 +220,6 @@ body {
     align-items: center;
 }
 
-
 .nav-list,
 .nav-user {
     list-style: none;
@@ -225,6 +242,7 @@ body {
 .popup-nav-list {
     display: none;
     position: absolute;
+    z-index: 100;
 
     background-color: #FCFCFC;
     border-radius: 4px;
@@ -502,7 +520,34 @@ body {
     background: rgba(252, 252, 252, 0.3);
     border-radius: 50%;
     border: 2px solid #FCFCFC;
-    fill: #fcfcfc;
+}
+
+.slider-control:hover {
+    background-color: #FCFCFC;
+}
+
+.slider-control:hover .slider-control-arrow {
+    fill: #2D3440;
+}
+
+.slider-control:focus {
+    border: 2px solid #2D3440;
+    outline: none;
+}
+
+.slider-control:focus .slider-control-arrow {
+    fill: #2D3440;
+}
+
+.slider-control.disabled-slider-control {
+    background: rgba(252, 252, 252, 0.3);
+    border: 2px solid #FCFCFC;
+    opacity: 0.4;
+}
+
+.slider-control.disabled-slider-control .slider-control-arrow {
+    fill: #FCFCFC;
+    opacity: 0.4;
 }
 
 .pre-slider {
@@ -548,19 +593,31 @@ body {
     height: 12px;
     border-radius: 50%;
     background-color: #FCFCFC;
+    opacity: 0.3;
 
     margin-right: 8px;
 }
 
-.slider-dots-item:last-child {
-    margin-right: 0;
+.slider-dots-item.current {
+    opacity: 1;
+}
+
+.slider-dots-item:hover {
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 1px solid #FCFCFC;
+    box-sizing: border-box;
+    opacity: 1;
+}
+
+.slider-dots-item:focus-within {
+    background: rgba(252, 252, 252, 0.3);
+    border: 1px solid #2D3440;
+    box-sizing: border-box;
+    opacity: 1;
 }
 
 .social-slider-item {
-    width: 24px;
-    height: 24px;
-
-    margin-right: 16px;
+    margin-right: 12px;
 }
 
 .social-slider-item:last-child {
@@ -1114,9 +1171,6 @@ body {
 }
 
 .social-footer-item {
-    width: 28px;
-    height: 28px;
-
     margin-right: 12px;
 }
 
