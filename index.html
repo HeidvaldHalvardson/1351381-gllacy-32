@@ -16,14 +16,31 @@
           </a>
         </div>
         <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="catalog.html">Каталог</a>
+          <li class="nav-item nav-item-popup" tabindex="1">
+            <a class="nav-link button popup-button" href="catalog.html">Каталог</a>
+            <ul class="popup-nav-list">
+              <li class="title-popup-nav-item popup-nav-item">
+                <a class="popup-nav-link" href="#">Новинки</a>
+              </li>
+              <li class="popup-nav-item">
+                <a class="popup-nav-link" href="catalog.html">Сливочное</a>
+              </li>
+              <li class="popup-nav-item">
+                <a class="popup-nav-link" href="#">Щербеты</a>
+              </li>
+              <li class="popup-nav-item">
+                <a class="popup-nav-link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="popup-nav-item">
+                <a class="popup-nav-link" href="#">Мелорин</a>
+              </li>  
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="delivery.html">Доставка и оплата</a>
+            <a class="nav-link button nav-button" href="delivery.html">Доставка и оплата</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about-us.html">О компании</a>
+            <a class="nav-link button nav-button" href="about-us.html">О компании</a>
           </li>
         </ul>
         <!-- Навигация пользователя -->
@@ -32,19 +49,50 @@
             <a class="nav-user-link nav-phone" href="tel:+7800555-86-28">+7 800 555-86-28</a>
           </li>
           <li class="nav-item">
-            <a class="nav-user-link" href="#">
+            <a class="nav-user-link button transparent-button transparent-button-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
+            <!-- Попап поиска -->
+            <section class="search-popup">
+              <h2 class="visually-hidden">Строка поиска</h2>
+              <form class="search-popup-form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="search-popup">Поле поиска</label>
+                <input class="search-input field" id="search-popup" name="search-popup" type="text" placeholder="Поиск по сайту">
+                <button class="search-button visually-hidden">Поиск</button>
+              </form>
+            </section>
           </li>
           <li class="nav-item">
-            <a class="nav-user-link" href="#">
+            <a class="nav-user-link button transparent-button transparent-button-login" href="#">
               <span class="nav-button-text">Вход</span>
             </a>
+            <!-- Попап входа -->
+            <section class="login-popup">
+            <h2 class="login-popup-title">Личный кабинет</h2>
+            <form class="login-popup-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="login-email">Email</label>
+              <input class="login-popup-input field" id="login-email" name="login-email" type="email" placeholder="email@example.com" required>
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input class="login-popup-input field" id="login-password" name="login-password" type="password" placeholder="••••••" required>
+              <div class="login-popup-grid">
+                <button class="button red-button login-popup-button">Войти</button>
+                <p class="login-popup-link-wrapper">
+                  <a class="forget-password login-popup-link" href="#">Забыли пароль?</a>
+                  <a class="registration login-popup-link" href="#">Регистрация</a>
+                </p>
+              </div>  
+            </form>
+          </section>
           </li>
           <li class="nav-item">
-            <a class="nav-user-link" href="basket.html">
+            <a class="nav-user-link button transparent-button transparent-button-basket" href="basket.html">
               <span class="nav-button-text">Пусто</span>
             </a>
+            <!-- Попап корзины для пустой корзины -->
+            <section class="basket-popup">
+              <h2 class="visually-hidden basket-popup-title">Корзина</h2>
+              <p class="basket-popup-message">Ваша корзина пока пуста</p>
+            </section>
           </li>
         </ul>
       </nav>
@@ -71,7 +119,7 @@
             </figure>
           </div>  
         </div>
-        <div class="slider-2 slide visually-hidden" id="slide-2">
+        <div class="slider-2 slide-current" id="slide-2">
           <div class="best-offer">
             <h3 class="best-offer-title">Сливочное мороженое со вкусом банана</h3>
             <p class="best-offer-description">Сливочное мороженое с ярким банановым вкусом подарит 
@@ -85,7 +133,7 @@
             </figure>
           </div>
         </div>         
-        <div class="slider-3 slide visually-hidden" id="slide-3">
+        <div class="slider-3 slide" id="slide-3">
           <div class="best-offer">
             <h3 class="best-offer-title">Карамельный пломбир с маршмеллоу</h3>
             <p class="best-offer-description">Необычный сладкий дессерт с карамельный топпингом 
@@ -101,10 +149,16 @@
         </div>
         <!-- Управление слайдами на слайде -->
         <div class="ice-cream sliders-control">
-          <button class="pre-slider">
+          <button class="pre-slider slider-control">
+            <svg class="slider-control-arrow" aria-hidden="true" fosucable="false" width="6" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8 1.8a.66.66 0 1 0-.94-.94L.2 5.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L1.6 6l4.2-4.2Z">
+            </svg>
             <span class="visually-hidden">Предыдущее предложение</span>
           </button>
-          <button class="next-slider">
+          <button class="next-slider slider-control">
+            <svg class="slider-control-arrow" aria-hidden="true" fosucable="false" width="6" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z">
+            </svg>
             <span class="visually-hidden">Следующее предложение</span>
           </button>
         </div>
@@ -375,33 +429,6 @@
         <button class="button red-bautton">Отправить</button>
         <button class="close-button"><span class="visually-hidden">Закрыть</span></button>
       </form>
-    </section>
-    <!-- Попап поиска -->
-    <section class="search-popup">
-      <h2 class="visually-hidden">Строка поиска</h2>
-      <form class="search-popup-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="search-popup">Поле поиска</label>
-        <input id="search-popup" name="search-popup" type="text" placeholder="Поиск по сайту">
-        <button class="search-button">Поиск</button>
-      </form>
-    </section>
-    <!-- Попап входа -->
-    <section class="login-popup">
-      <h2 class="login-popup-title">Личный кабинет</h2>
-      <form class="login-popup-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="login-email">Email</label>
-        <input id="login-email" name="login-email" type="email" placeholder="email@example.com">
-        <label class="visually-hidden" for="login-password">Пароль</label>
-        <input id="login-password" name="login-password" type="password" placeholder="••••••">
-        <button class="button red-button">Войти</button>
-      </form>
-      <a class="forget-password login-popup-link" href="#">Забыли пароль?</a>
-      <a class="registration login-popup-link" href="#">Регистрация</a>
-    </section>
-    <!-- Попап корзины для главной -->
-    <section class="basket-popup">
-      <h2 class="visually-hidden basket-popup-title">Корзина</h2>
-      <p class="basket-popup-message">Ваша корзина пока пуста</p>
     </section>
   </body>
 </html>
