@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин "Глейси"</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
@@ -11,12 +12,12 @@
       <nav class="nav container">
         <!-- Навигация по сайту -->
         <div class="logo-header">
-          <a class="logo-link" href="index.html">
+          <a class="logo-link" href="index.html" tabindex="1">
             <img class="logo-image" src="img/logo.svg" alt="Логотип магазина &#34;Глейси&#34;" width="137" height="56">
           </a>
         </div>
         <ul class="nav-list">
-          <li class="nav-item nav-item-popup" tabindex="1">
+          <li class="nav-item nav-item-popup">
             <a class="nav-link button popup-button" href="catalog.html">Каталог</a>
             <ul class="popup-nav-list">
               <li class="title-popup-nav-item popup-nav-item">
@@ -67,7 +68,7 @@
               <span class="nav-button-text">Вход</span>
             </a>
             <!-- Попап входа -->
-            <!-- <section class="login-popup">
+            <section class="login-popup">
             <h2 class="login-popup-title">Личный кабинет</h2>
             <form class="login-popup-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="login-email">Email</label>
@@ -92,7 +93,7 @@
             <section class="basket-popup">
               <h2 class="visually-hidden basket-popup-title">Корзина</h2>
               <p class="basket-popup-message">Ваша корзина пока пуста</p>
-            </section> -->
+            </section>
           </li>
         </ul>
       </nav>
@@ -231,8 +232,8 @@
       <section class="popular">
         <h2 class="popular-title">Попробуйте самые популярные<br>
                                   вкусы нашего мороженого</h2>
-        <ul class="popular-list production-list">
-          <li class="popular-item production">
+        <ul class="production-list">
+          <li class="production">
             <a class="product" href="basket.html">
               <img class="product-img" src="img/catalog/catalog-1.jpg" alt="" width="168" height="168">
               <h3 class="product-title">Малинка</h3>
@@ -246,7 +247,7 @@
               </svg>
             </a>
           </li>
-          <li class="popular-item production">
+          <li class="production">
             <a class="product" href="basket.html">
               <img class="product-img" src="img/catalog/catalog-2.jpg" alt="" width="168" height="168">
               <h3 class="product-title">Фисташка</h3>
@@ -260,7 +261,7 @@
               </svg>
             </a>
           </li>
-          <li class="popular-item production">
+          <li class="production">
             <a class="product" href="basket.html">
               <img class="product-img" src="img/catalog/catalog-3.jpg" alt="" width="168" height="168">
               <h3 class="product-title">Черника</h3>
@@ -274,7 +275,7 @@
               </svg>
             </a>
           </li>
-          <li class="popular-item production">
+          <li class="production">
             <a class="product" href="basket.html">
               <img class="product-img" src="img/catalog/catalog-4.jpg" alt="" width="168" height="168">
               <h3 class="product-title">Бабл-гам</h3>

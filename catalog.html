@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин "Глейси"</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
@@ -11,12 +12,12 @@
       <nav class="nav container">
         <!-- Навигация по сайту -->
         <div class="logo-header">
-          <a class="logo-link" href="index.html">
+          <a class="logo-link" href="index.html" tabindex="1">
             <img class="logo-image" src="img/logo.svg" alt="Логотип магазина &#34;Глейси&#34;" width="137" height="56">
           </a>
         </div>
         <ul class="nav-list">
-          <li class="nav-item nav-item-popup" tabindex="1">
+          <li class="nav-item nav-item-popup">
             <a class="nav-link button popup-button active-page" href="catalog.html">Каталог</a>
             <ul class="popup-nav-list">
               <li class="title-popup-nav-item popup-nav-item">
@@ -438,7 +439,7 @@
           <a class="button white-button view-more" href="#">Показать еще</a>
           <ul class="catalog-pagination">
             <li class="catalog-pagination-item">
-              <a class="catalog-pagination-link left-pagination-control" href="#">
+              <a class="catalog-pagination-link left-pagination-control arrow-pagination disabled" href="#">
                 <span class="visually-hidden">Предыдушая страница</span></a>
             </li>
             <li class="catalog-pagination-item">
@@ -457,7 +458,7 @@
               <a class="catalog-pagination-link" href="#">5</a>
             </li>
             <li class="catalog-pagination-item">
-              <a class="catalog-pagination-link right-pagination-control" href="#">
+              <a class="catalog-pagination-link right-pagination-control arrow-pagination" href="#">
                 <span class="visually-hidden">Следующая страница</span></a>
             </li>
           </ul> 
@@ -502,7 +503,7 @@
         <section class="footer-info"> 
           <h2 class="visually-hidden">Информация</h2>
           <ul class="footer-info-list">
-            <li class="footer-info-item up-item">
+            <li class="footer-info-item">
               <a class="footer-info-link footer-info-heart" href="#">Для поставщиков</a>
             </li>
             <li class="footer-info-item">
@@ -514,7 +515,7 @@
         <section class="footer-doc">
           <h2 class="visually-hidden">Документация</h2>
           <ul class="footer-info-list">
-            <li class="footer-info-item up-item">
+            <li class="footer-info-item">
               <a class="footer-info-link" href="#">Наши документы</a>
             </li>
             <li class="footer-info-item">
