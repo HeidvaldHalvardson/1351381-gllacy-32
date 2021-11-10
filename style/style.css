@@ -48,11 +48,6 @@ body {
   min-height: 100%;
 }
 
-img {
-  max-width: 100%;
-  object-fit: contain;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -70,7 +65,7 @@ img {
 }
 
 .button {
-  font-family: inherit;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -176,7 +171,7 @@ img {
   box-sizing: border-box;
   height: 48px;
 
-  font-family: inherit;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
@@ -557,12 +552,12 @@ img {
 }
 
 .slide .best-offer-img {
-  margin-left: -33px;
+  margin-left: -40px;
   opacity: 0.4;
 }
 
-.slide .best-offer-img img {
-  width: 66px;
+.slide img {
+  width: 82px;
   height: 150px;
 }
 
@@ -1180,7 +1175,7 @@ img {
   background-image: url("../img/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 16px top 16px;
-  font-family: inherit;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1252,7 +1247,7 @@ img {
   padding: 0;
   background-color: transparent;
   border: none;
-  font-family: inherit;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
