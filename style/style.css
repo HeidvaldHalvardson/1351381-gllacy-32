@@ -48,6 +48,14 @@ body {
   min-height: 100%;
 }
 
+.blue-page {
+  background-color: #69a9ff;
+}
+
+.yellow-page {
+  background-color: #fcc850;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -104,7 +112,7 @@ body {
 
 .white-button.white-disabled {
   background: #e7e7e7;
-  box-shadow: 0 0 0 4px srgba(252, 252, 252, 0.4);
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
   color: #b9b9b9;
 }
 
@@ -525,6 +533,7 @@ body {
   background-color: #ffcbd8;
   margin-top: 100px;
   margin-bottom: 95px;
+  opacity: 0.4;
 }
 
 .best-offer-img {
@@ -1020,7 +1029,7 @@ body {
 /* Контакты и форма обратной связи */
 
 .contacts {
-  background-color: #fcfcfc;
+  background-color: #ffcbd8;
   background-image: url("../img/form-bg.jpg");
   background-repeat: no-repeat;
   width: 1170px;
