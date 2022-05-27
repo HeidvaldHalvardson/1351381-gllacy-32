@@ -1,3 +1,5 @@
+https://heidvaldhalvardson.github.io/1351381-gllacy-32/
+
 # Личный проект «Глейси»
 
 * Студент: [Влад Богодяж](https://up.htmlacademy.ru/htmlcss/32/user/1351381).
