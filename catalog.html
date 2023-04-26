@@ -38,10 +38,10 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link button nav-button" href="delivery.html">Доставка и оплата</a>
+            <a class="nav-link button nav-button" href="#">Доставка и оплата</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link button nav-button" href="about-us.html">О компании</a>
+            <a class="nav-link button nav-button" href="#">О компании</a>
           </li>
         </ul>
         <!-- Навигация пользователя -->
@@ -54,7 +54,7 @@
               <span class="visually-hidden">Поиск</span>
             </a>
             <!-- Попап поиска -->
-            <section class="search-popup">
+            <section class="search-popup search-popup-hover">
               <h2 class="visually-hidden">Строка поиска</h2>
               <form class="search-popup-form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="search-popup">Поле поиска</label>
@@ -87,11 +87,11 @@
           </section>
           </li>
           <li class="nav-item">
-            <a class="nav-user-link button transparent-button transparent-button-basket-full" href="basket.html">
+            <a class="nav-user-link button transparent-button transparent-button-basket transparent-button-basket-full" href="basket.html">
               <span class="nav-button-text">2 товара</span>
             </a>
             <!-- Попап корзины для каталога -->
-            <section class="basket-popup-changed">
+            <section class="basket-popup basket-popup-changed">
               <h2 class="basket-popup-title">Корзина</h2>
               <ul class="basket-popup-list">
                 <li class="basket-popup-item">
@@ -114,7 +114,7 @@
                 </li>
               </ul>
               <div class="basket-total-wrapper">
-                <a class="button red-button" href="basket.html">Оформить заказ</a>
+                <a class="button red-button" href="#">Оформить заказ</a>
                 <p class="basket-total">Итого: 790 ₽</p>
               </div>
             </section>
@@ -156,11 +156,11 @@
             <legend class="range-label-wrapper filter-text-style">
               <span class="filter-titles">Цена:</span>
               <label class="filter-price-label">
-                <input class="filter-price-input price-min" name="price-min" min="100" max="1200" step="10" value="100" type="number">
+                <input class="filter-price-input price-min-input" name="price-min" min="100" max="1200" step="10" value="100" type="number">
                 <span class="filter-price-currency">₽ –</span>
               </label>
               <label class="filter-price-label">
-                <input class="filter-price-input price-max" name="price-max" min="100" max="1200" step="10" value="500" type="number">
+                <input class="filter-price-input price-max-input" name="price-max" min="100" max="1200" step="10" value="500" type="number">
                 <span class="filter-price-currency">₽</span>
               </label>
             </legend>
@@ -536,5 +536,6 @@
         </address>
       </section>
     </footer>
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>

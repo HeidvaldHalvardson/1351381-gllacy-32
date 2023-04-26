@@ -38,10 +38,10 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link button nav-button" href="delivery.html">Доставка и оплата</a>
+            <a class="nav-link button nav-button" href="#">Доставка и оплата</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link button nav-button" href="about-us.html">О компании</a>
+            <a class="nav-link button nav-button" href="#">О компании</a>
           </li>
         </ul>
         <!-- Навигация пользователя -->
@@ -105,48 +105,50 @@
       <!-- Слайдер Лучшее предложение -->
       <section class="slider">
         <h2 class="visually-hidden">Лучшее предложение</h2>
-        <div class="slider-1 slide-current" id="slide-1">
-          <div class="best-offer">
-            <h3 class="best-offer-title">Нежный пломбир<br>
-              с клубничным джемом</h3>
-            <p class="best-offer-description">Натуральное мороженое из свежих сливок
-              и&nbsp;молока с вкуснейшим клубничным джемом<br>
-              – это идеальный десерт для всей семьи.</p>
-            <a class="button white-button" href="#">Заказать</a>
+        <div class="slider-inner">
+          <div class="slider-1 slide-item slide-current" id="slide-1">
+            <div class="best-offer">
+              <h3 class="best-offer-title">Нежный пломбир<br>
+                с клубничным джемом</h3>
+              <p class="best-offer-description">Натуральное мороженое из свежих сливок
+                и&nbsp;молока с вкуснейшим клубничным джемом<br>
+                – это идеальный десерт для всей семьи.</p>
+              <a class="button white-button" href="#">Заказать</a>
+            </div>
+            <div class="ice-cream-wrapper">
+              <div class="circle"></div>
+              <figure class="best-offer-img">
+                <img src="img/ice-cream-slide-1.png" alt="" width="306" height="507">
+              </figure>
+            </div>
           </div>
-          <div class="ice-cream-wrapper">
-            <div class="circle"></div>
-            <figure class="best-offer-img">
-              <img src="img/ice-cream-slide-1.png" alt="" width="306" height="507">
-            </figure>
+          <div class="slider-2 slide-item slide" id="slide-2">
+            <div class="best-offer">
+              <h3 class="best-offer-title">Сливочное мороженое со вкусом банана</h3>
+              <p class="best-offer-description">Сливочное мороженое с ярким банановым вкусом подарит
+                вам свежесть и наслаждение даже в самый жаркий летний день. </p>
+              <a class="button white-button" href="#">Заказать</a>
+            </div>
+            <div class="ice-cream-wrapper">
+              <div class="circle"></div>
+              <figure class="best-offer-img">
+                <img src="img/ice-cream-slide-2.png" alt="" width="306" height="507">
+              </figure>
+            </div>
           </div>
-        </div>
-        <div class="slider-2 slide" id="slide-2">
-          <div class="best-offer">
-            <h3 class="best-offer-title">Сливочное мороженое со вкусом банана</h3>
-            <p class="best-offer-description">Сливочное мороженое с ярким банановым вкусом подарит
-              вам свежесть и наслаждение даже в самый жаркий летний день. </p>
-            <a class="button white-button" href="#">Заказать</a>
-          </div>
-          <div class="ice-cream-wrapper">
-            <div class="circle"></div>
-            <figure class="best-offer-img">
-              <img src="img/ice-cream-slide-2.png" alt="" width="306" height="507">
-            </figure>
-          </div>
-        </div>
-        <div class="slider-3 slide" id="slide-3">
-          <div class="best-offer">
-            <h3 class="best-offer-title">Карамельный пломбир с маршмеллоу</h3>
-            <p class="best-offer-description">Необычный сладкий дессерт с карамельный топпингом
-              и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-            <a class="button white-button" href="#">Заказать</a>
-          </div>
-          <div class="ice-cream-wrapper">
-            <div class="circle"></div>
-            <figure class="best-offer-img">
-              <img src="img/ice-cream-slide-3.png" alt="" width="306" height="507">
-            </figure>
+          <div class="slider-3 slide-item slide" id="slide-3">
+            <div class="best-offer">
+              <h3 class="best-offer-title">Карамельный пломбир с маршмеллоу</h3>
+              <p class="best-offer-description">Необычный сладкий дессерт с карамельный топпингом
+                и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+              <a class="button white-button" href="#">Заказать</a>
+            </div>
+            <div class="ice-cream-wrapper">
+              <div class="circle"></div>
+              <figure class="best-offer-img">
+                <img src="img/ice-cream-slide-3.png" alt="" width="306" height="507">
+              </figure>
+            </div>
           </div>
         </div>
         <!-- Управление слайдами на слайде -->
@@ -377,7 +379,7 @@
           <p class="contacts-phone-title">Для заказов по телефону:</p>
           <a class="contacts-phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
           <p class="contacts-time">(с 10 до 20 ежедневно)</p>
-          <a class="button red-button" href="#">Форма обратной связи</a>
+          <a class="button red-button" id="callback-form-button" href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -467,8 +469,9 @@
           <textarea class="field field-textarea" id="feedback-message" name="feedback-message" cols="30" rows="10" required>В свободной форме</textarea>
           <button class="button red-button feedback-button" type="submit">Отправить</button>
         </form>
-        <button class="close-button"><span class="visually-hidden">Закрыть</span></button>
+        <button class="close-button" id="modal-close"><span class="visually-hidden">Закрыть</span></button>
       </section>
     </div>
   </body>
+  <script src="js/index.js" type="module"></script>
 </html>
